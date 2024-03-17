@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(244, 244, 244);
+    /* background-color: #1E1E1E; */
+
+
+}
+
+#escritorio {
+    background-color: #ececec;
+    border-radius: 20px;
+    /* margin: 100px; */
+    box-shadow: 10px 10px 7px;
+    /* display: flex; */
+    width:99%;
+    /* width:900px; */
+    /* height:600px; */
+    overflow: hidden;
+    
+}
+
+#escritorio-interior {
+  display: flex;
+  /* flex-flow: row; */
+  justify-content: center;
+  background-color: #ececec;
+  border-radius: 20px;
+  /* width: 900px; */
+  /* height: 500px; */
+
+}
+
+
+
+#parte-superior{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 20px 0px;
+    padding: 20px;
+    background-color: #669900;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 900px;
+    font-size: 25px;
+    height: 10%;
+}
+
+
+#parte-izquierda{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: left;
+  border-radius: 0px 20px 0px 20px;
+  /* padding: 20px; */
+  background-color:#bababa;;
+  /* color: white; */
+  font-family: Helvetica;
+  width: 30%;
+
+}
+
+#parte-derecha{
+  display: flex;
+  flex-flow: column;
+  /* align-items: center; */
+  /* justify-content: left; */
+  border-radius: 0px 20px 0px 20px;
+  /* padding: 20px; */
+  /* background-color:white; */
+  /* color: white; */
+  font-family: Helvetica;
+  width: 70%;
+  
+}
+
+#parte-central{
+  width: 600px;
+  height:400px;
+
+}
+
+#parte-inferior{
+  /* display: flex; */
+  /* flex-flow: row; */
+  /* justify-content: center;*/
+
+  align-items: center;
+  /* flex-flow: center; */
+  border-radius: 0px 20px 0px 0px;
+  /* padding: 20px; */
+  background-color:rgb(212, 212, 212);
+  /* color: white; */
+  font-family: Helvetica;
+  height:100px;
+  width: 100%;
+  /* position: relative; */
+
+}
+
+
+input[type=text], select {
+  padding: 12px 20px;
+  margin: 8px 20px;
+  /* display: inline-block; */
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #AAAAAA ;
+  color: white;
+  margin-top: 2em;
+  /* position: relative; */
+  width: 70%;
+  }
+ 
+
+input[type=submit] {
+  /* width: 25%; */
+  background-color: #669900;
+  color: white;
+  padding: 11px 15px;
+  /* margin: 0px 0px 0px 40px; */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  margin-left: 80%;
+  position: relative;
+  bottom: 44px;
+  
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.botón{
+  background-color: #669900;
+  color: white;
+  padding: 11px 15px;
+  
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  bottom: -110px;
+  position: relative;
+
+}
+
+.nombre-perfil{
+  
+  margin: 40px;
+
+}
+
+.foto-perfil{
+  /* position: absolute; */
+  bottom: -100;
+  border-radius: 100%;
+  margin: 20px;
+
+}
