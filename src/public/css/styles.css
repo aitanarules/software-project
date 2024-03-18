@@ -1,160 +1,241 @@
-/* https://www.mclibre.org/consultar/htmlcss/css/css-posicionamiento-absoluto.html */
-
+/* Estilos para escritorio-login */
 body {
-    /* background-color: rgb(244, 244, 244); */
-    /* background-color: #1E1E1E; */
-    background-color: #bababa;
-
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-
-
+  background-color: #bababa;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#escritorio {
-    background-color: #ececec;
-    border-radius: 20px;
-    margin: 100px;
-
-    width: 550px;
-    height: 410px;
-
-    display: flex;
-    flex-flow: column;
-
-    box-shadow: 10px 10px 2px;
+#escritorio-login {
+  background-color: #ececec;
+  border-radius: 20px;
+  margin: 100px;
+  width: 550px;
+  height: 410px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 10px 10px 10px;
+  /* display: None; */
 }
 
-#parte-superior{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 20px;
-    padding: 15px;
-    background-color: #669900;
-
-    color: white;
-    font-family: Helvetica;
-    font-weight: 900;
-    font-size: 25px;
-
+#parte-superior-login {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #669900;
+  color: white;
+  font-family: Helvetica;
+  font-size: 25px;
+  width: 95%;
 }
 
-
-
-#parte-central{
-    display: flex;
-    flex-flow: column;
-    /* align-items: left; */
-    padding: 20px;
-
-    justify-content: center;
-    border-radius: 25px;
-    /* color: #FFFFFF; */
-
+#parte-central-login {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 25px;
 }
 
-input[type=text], input[type=password], select {
-    width: 65%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 0px;
-
-    border-radius: 10px;
-    box-sizing: border-box;
-    background-color: #AAAAAA ;
-    color: white;
-    border-color: #669900;
-    font-size:medium;
-
-  }
-
-input[type=submit] {
-    width: 25%;
-    height: 30%;
-    background-color: #669900;
-    color: white;
-    padding: 8px 20px;
-
-    font-weight: 600;
-    font-size: larger;
-
-    border: none;
-    border-radius: 13px;
-    cursor: pointer;
-    position: relative;
-    left: 360px;
-    bottom: 20px;
-  }
-  
-input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-#parte-inferior{
-    display: flex;
-    text-align:center;
-    /* flex-flow: column; */
-    /* align-items: center; */
-    /* padding: 20px; */
-    /* padding: 0px 20px 20px 20px; */
-    /* justify-content: center; */
-    /* border-radius: 20px; */
-    color: white;
-    /* padding-bottom: 20px; */
-
+#nombre-usuario, #contraseña {
+  width: 120%;
+  padding: 12px 20px;
+  margin: 10px;
+  border: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #AAAAAA ;
+  color: black;
+  border-color: #669900;
+  font-size: medium;
+  margin-left: -40%;
 }
 
-#enlace-no-cuenta{
-    cursor: pointer;
-    position: relative;
-    left: 360px;
+#nombre-usuario-error{
+  background-color: red;
+  color: white;
+  position: relative;
+  left: -2em;
+  bottom: 3em;
+  width: fit-content;
+  margin: 0px;
 }
 
-
-
-#enlace-no-contraseña{
+#ingresar {
+  width: 25%;
+  height: 30%;
+  background-color: #669900;
+  color: white;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: larger;
+  border: none;
+  border-radius: 13px;
   cursor: pointer;
   position: relative;
-  right: 120px;
+  left: 360px;
+  bottom: 20px;
+}
+
+#ingresar{
+  width: fit-content;
+  margin-left: -40%;
+  margin-top: -35%;
+}
+
+#ingresar:hover {
+  background-color: #45a049;
+}
+
+#parte-inferior-login {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+#enlace-no-cuenta {
+  cursor: pointer;
+  position: relative;
+  right: 4.5em;  
+}
+
+#enlace-no-contraseña {
+  cursor: pointer;
+  position: relative;
+  left: 4.5em;
 }
 
 
-
-
-
- /* unvisited link */   /* visited link */
-
-
- a:link{
-  color:#1E1E1E;
- }
-
- a:visited {
-  color: #669900;
-  text-decoration: none;
+/* Estilos para escritorio-chat */
+#escritorio-chat {
+  background-color: #ececec;
+  border-radius: 20px;
+  box-shadow: 10px 10px 7px;
+  width: 99%;
+  display: none;
 }
-  
-  /* mouse over link */
-  a:hover {
-    color: green;
-    text-decoration: underline;
-    cursor: pointer;
 
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-    text-decoration: underline;
+#escritorio-interior {
+  display: flex;
+  justify-content: center;
+  background-color: #ececec;
+  border-radius: 20px;
+}
 
-  } 
+#parte-superior {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 20px 0px;
+  padding: 20px;
+  background-color: #669900;
+  color: white;
+  font-family: Helvetica;
+  font-size: 25px;
+  height: 10%;
+}
 
+#parte-izquierda {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: left;
+  border-radius: 0px 20px 0px 20px;
+  background-color: #bababa;
+  font-family: Helvetica;
+  width: 30%;
+}
 
+#usuarios-presentes{
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  padding-left: 2%;
+  border-radius: 20px;
+  background-color: #7d7d7d ;
+  color: white;
+  width: 90%;
+  height: 300px;
+  margin: 1em;
 
+}
 
+#parte-derecha {
+  display: flex;
+  flex-flow: column;
+  border-radius: 0px 20px 0px 20px;
+  font-family: Helvetica;
+  width: 70%;
+}
 
+#parte-central {
+  width: 94%;
+  height: 600px;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+#parte-inferior {
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  background-color: rgb(212, 212, 212);
+  color: black;
+  font-family: Helvetica;
+  height: 100px;
+  width: 100%;
+}
+
+#mensaje {
+  padding: 12px 20px;
+  margin: 8px 20px;
+  border: 0px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #AAAAAA;
+  margin-top: 2em;
+  width: 70%;
+}
+
+#enviar {
+  background-color: #669900;
+  color: white;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 80%;
+  position: relative;
+  bottom: 44px;
+}
+
+#enviar:hover {
+  background-color: #45a049;
+}
+
+.botón {
+  background-color: #669900;
+  color: white;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  bottom: -50px;
+  position: relative;
+  /* margin: 20%; */
+}
+
+.nombre-perfil {
+  margin: 25px;
+}
+
+.foto-perfil {
+  border-radius: 100%;
+  margin: 20px;
+}

@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PoliChat</title>
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/main.js"></script>
-    <div id="escritorio">
-        
-        <div id="parte-superior"> 
-            <h1 id="titlo"> PoliConnecta't</h1>
-        </div>
 
-        <div id="parte-central">
-            <form action="/index2.html">
-                <input type="text" id="nom" name="nom" required placeholder="Username"><br>
-                <input type="password" id="contrasenya" name="contrasenya" required placeholder="Password"><br><br>
-                <input type="submit" value="Entra">                
+
+    <div id="escritorio-login">
+                
+        <div id="parte-superior-login"> 
+            <h1 id="titulo-login"> PoliConnecta't</h1>
+        </div>
+        
+
+
+        <div id="parte-central-login">
+            <form id="formulario-login">
+                <input type="text" id="nombre-usuario" name="nombre-usuario" required placeholder="Username"><br>
+                <input type="password" id="contraseña" name="contraseña" required placeholder="Password"><br><br>
+                <input type="submit" id="ingresar" value="Entra">                
             </form>
 
-        </div>
 
-        <div id = "parte-inferior">
+        </div>
+        <div id="nombre-usuario-error"> </div>
+
+        <div id = "parte-inferior-login">
             <div class="enlaces">
                 <a href="https://www.google.com/" id="enlace-no-cuenta"> Encara no t'has registrat? </a>
             </div>
@@ -31,14 +40,53 @@
             <div class="enlaces">
                 <a href="https://www.google.com/" id="enlace-no-contraseña"> Has oblidat la contrasenya? </a>
             </div>
-            
 
         </div>
 
+    </div> 
+
+    <div id="escritorio-chat">
+        <div id="parte-superior">
+            <h1 class="titulo">PoliConnecta't</h1>
+    
+        </div>
+
+
+        <div id="escritorio-interior"> 
+            <div id="parte-izquierda">
+                <img class="foto-perfil" src="profile-pic.jpeg" alt="No-photo-profile">
+                <h3 id="nombre-perfil" class="nombre-perfil">Your name</h3>
+                <div id="usuarios-presentes">
+                    <h3>Usuaris actius</h3>
+                    <div id="usernames">
+
+                    </div>
+                </div>
+                <button class="botón"> Tancar sessió </button>
+            </div>
+        
+            <div id="parte-derecha">
+                <div id="parte-central">
+                    
+
+                </div>
+                <div id="parte-inferior">
+                    <form id="formulario-mensajes">
+                        <!-- <label for="nom">First name:</label><br> -->
+                        <input type="text" id="mensaje" name="mensaje" required placeholder="Escriviu ací..."><br>
+                        <input type="submit" id="enviar" value="Envia">                
+                    </form>
+            
+                </div>
+        
+            </div>
+
+        </div>
+        
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/main.js"> </script>
-    
+    <script src="/js/main.js"></script>
 </body>
 </html>
