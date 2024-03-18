@@ -1,0 +1,160 @@
+/* https://www.mclibre.org/consultar/htmlcss/css/css-posicionamiento-absoluto.html */
+
+body {
+    /* background-color: rgb(244, 244, 244); */
+    /* background-color: #1E1E1E; */
+    background-color: #bababa;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#escritorio {
+    background-color: #ececec;
+    border-radius: 20px;
+    margin: 100px;
+
+    width: 550px;
+    height: 410px;
+
+    display: flex;
+    flex-flow: column;
+
+    box-shadow: 10px 10px 2px;
+}
+
+#parte-superior{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #669900;
+
+    color: white;
+    font-family: Helvetica;
+    font-weight: 900;
+    font-size: 25px;
+
+}
+
+
+
+#parte-central{
+    display: flex;
+    flex-flow: column;
+    /* align-items: left; */
+    padding: 20px;
+
+    justify-content: center;
+    border-radius: 25px;
+    /* color: #FFFFFF; */
+
+}
+
+input[type=text], input[type=password], select {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 0px;
+
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #AAAAAA ;
+    color: white;
+    border-color: #669900;
+    font-size:medium;
+
+  }
+
+input[type=submit] {
+    width: 25%;
+    height: 30%;
+    background-color: #669900;
+    color: white;
+    padding: 8px 20px;
+
+    font-weight: 600;
+    font-size: larger;
+
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    left: 360px;
+    bottom: 20px;
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+#parte-inferior{
+    display: flex;
+    text-align:center;
+    /* flex-flow: column; */
+    /* align-items: center; */
+    /* padding: 20px; */
+    /* padding: 0px 20px 20px 20px; */
+    /* justify-content: center; */
+    /* border-radius: 20px; */
+    color: white;
+    /* padding-bottom: 20px; */
+
+}
+
+#enlace-no-cuenta{
+    cursor: pointer;
+    position: relative;
+    left: 360px;
+}
+
+
+
+#enlace-no-contraseña{
+  cursor: pointer;
+  position: relative;
+  right: 120px;
+}
+
+
+
+
+
+ /* unvisited link */   /* visited link */
+
+
+ a:link{
+  color:#1E1E1E;
+ }
+
+ a:visited {
+  color: #669900;
+  text-decoration: none;
+}
+  
+  /* mouse over link */
+  a:hover {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: underline;
+
+  } 
+
+
+
+
+

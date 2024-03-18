@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PoliChat</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+    <div id="escritorio">
+        
+        <div id="parte-superior"> 
+            <h1 id="titlo"> PoliConnecta't</h1>
+        </div>
+
+        <div id="parte-central">
+            <form action="/index2.html">
+                <input type="text" id="nom" name="nom" required placeholder="Username"><br>
+                <input type="password" id="contrasenya" name="contrasenya" required placeholder="Password"><br><br>
+                <input type="submit" value="Entra">                
+            </form>
+
+        </div>
+
+        <div id = "parte-inferior">
+            <div class="enlaces">
+                <a href="https://www.google.com/" id="enlace-no-cuenta"> Encara no t'has registrat? </a>
+            </div>
+
+            <div class="enlaces">
+                <a href="https://www.google.com/" id="enlace-no-contraseña"> Has oblidat la contrasenya? </a>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"> </script>
+    
+</body>
+</html>
