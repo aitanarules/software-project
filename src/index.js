@@ -13,7 +13,7 @@ const io =  require('socket.io')(server); //tengo conexión en tiempo real con s
 //setings
 app.set('port', process.env.PORT||3000); // establezco un puerto que es el que me da el SO o el 3000
 
-require('./sockets')(io); // import y ejecuto un módulo que está en sockets y le paso como parámetro io
+require('./public/js/sockets')(io); // import y ejecuto un módulo que está en sockets y le paso como parámetro io
 
 
 // console.log(path.join(__dirname, 'public')); //permite hacerlo mulitplatarforma el join

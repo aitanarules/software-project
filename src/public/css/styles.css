@@ -117,7 +117,7 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 7px;
   width: 99%;
-  display: none;
+  display: none; 
 }
 
 #escritorio-interior {
@@ -155,14 +155,37 @@ body {
 #usuarios-presentes{
   display: flex;
   flex-flow: column;
-  align-items: left;
-  padding-left: 2%;
+  /* align-items: left; */
+  /* padding-left: -5%; */
   border-radius: 20px;
   background-color: #7d7d7d ;
   color: white;
   width: 90%;
   height: 300px;
   margin: 1em;
+
+}
+
+#usernames{
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  padding-left: 5%;
+}
+
+#titulo-usuarios{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 2px;
+  background-color: #669900;
+  color: white;
+  font-family: Helvetica;
+  height: 15%;
+  width: 102%;
+  margin-left: -0.4em;
 
 }
 
@@ -180,6 +203,9 @@ body {
   color: black;
   margin: 10px;
   padding: 10px;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+
 }
 
 #parte-inferior {
@@ -219,7 +245,7 @@ body {
   background-color: #45a049;
 }
 
-.botón {
+#cerrar-sesion {
   background-color: #669900;
   color: white;
   padding: 11px 15px;
@@ -231,11 +257,43 @@ body {
   /* margin: 20%; */
 }
 
+#cerrar-sesion:hover{
+  background-color: #45a049;
+}
+
 .nombre-perfil {
   margin: 25px;
 }
 
-.foto-perfil {
+#foto-perfil {
   border-radius: 100%;
   margin: 20px;
+  width: 10em;
+  height: 10em;
+}
+
+#CAJA{
+  background-color: #bababa;
+  border-radius: 15px;
+  padding: 1em;
+  width: fit-content;
+}
+#PERFIL{
+  background-color: #669900;
+  padding: 0.5em;
+  border-radius: 15px;
+  width: min-content;
+  font-weight: bold;
+}
+
+#MENSAJE{
+  padding: 0.2em;
+}
+
+#HORA{
+  /* position: relative; */
+  /* left: 50%; */
+
+  color: #7d7d7d;
+
 }

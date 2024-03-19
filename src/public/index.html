@@ -22,9 +22,10 @@
 
 
         <div id="parte-central-login">
+    
             <form id="formulario-login">
-                <input type="text" id="nombre-usuario" name="nombre-usuario" required placeholder="Username"><br>
-                <input type="password" id="contraseña" name="contraseña" required placeholder="Password"><br><br>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" required placeholder="Nom d'usuari"><br>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contrasenya (opcional)"><br><br>
                 <input type="submit" id="ingresar" value="Entra">                
             </form>
 
@@ -32,7 +33,9 @@
         </div>
         <div id="nombre-usuario-error"> </div>
 
-        <div id = "parte-inferior-login">
+        
+
+        <!-- <div id = "parte-inferior-login">
             <div class="enlaces">
                 <a href="https://www.google.com/" id="enlace-no-cuenta"> Encara no t'has registrat? </a>
             </div>
@@ -41,7 +44,7 @@
                 <a href="https://www.google.com/" id="enlace-no-contraseña"> Has oblidat la contrasenya? </a>
             </div>
 
-        </div>
+        </div> -->
 
     </div> 
 
@@ -54,19 +57,31 @@
 
         <div id="escritorio-interior"> 
             <div id="parte-izquierda">
-                <img class="foto-perfil" src="profile-pic.jpeg" alt="No-photo-profile">
+                
+                <input type="file" id="input-foto-perfil" class="foto-perfil" accept="image/*" style="display: none;">
+                <label for="input-foto-perfil">
+                    <img id="foto-perfil" src="profile-pic.jpg" alt="No-photo-profile" >
+                </label>
+
+
                 <h3 id="nombre-perfil" class="nombre-perfil">Your name</h3>
                 <div id="usuarios-presentes">
-                    <h3>Usuaris actius</h3>
+                    <div id="titulo-usuarios">
+                        <h3 >Usuaris actius</h3>
+
+                    </div>
                     <div id="usernames">
 
                     </div>
                 </div>
-                <button class="botón"> Tancar sessió </button>
+                <button id="cerrar-sesion" class="botón"> Tancar sessió </button>
             </div>
         
             <div id="parte-derecha">
                 <div id="parte-central">
+                    <div id="">
+
+                    </div>
                     
 
                 </div>
